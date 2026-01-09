@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdo Ahmed's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <h2 class="logo-text">Abdo Ahmed</h2>
+        </a>
+
+        <div class="nav-center-container">
+            <nav class="future-nav">
+                <a href="#" class="nav-item active" data-section="home">HOME</a>
+                <a href="#" class="nav-item" data-section="about">ABOUT</a>
+                <a href="#" class="nav-item" data-section="skills">SKILLS</a>
+                <a href="#" class="nav-item" data-section="projects">PROJECTS</a>
+                <a href="#" class="nav-item" data-section="contact">CONTACT</a>
+            </nav>
+        </div>
+
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#" class="nav-item active" data-section="home">HOME</a>
+        <a href="#" class="nav-item" data-section="about">ABOUT</a>
+        <a href="#" class="nav-item" data-section="skills">SKILLS</a>
+        <a href="#" class="nav-item" data-section="projects">PROJECTS</a>
+        <a href="#" class="nav-item" data-section="contact">CONTACT</a>
+    </nav>
+
+    <div class="intro-overlay" id="introOverlay">
+        <div class="intro-content">
+            <h1 class="intro-title">HELLO TO THE FUTURE</h1>
+            <p class="intro-subtitle">Loading next-generation portfolio...</p>
+        </div>
+    </div>
+
+    <div id="cursor-trail-container"></div>
+
+    <div class="floating-element element-1"></div>
+    <div class="floating-element element-2"></div>
+
+    <div class="future-container">
+        <section id="home" class="active" style="overflow: hidden">
+            <canvas id="threejs-background"></canvas>
+            <div class="future-card">
+                <h1 class="future-heading">WELCOME TO THE FUTURE</h1>
+                <div class="about-content">
+                    <p class="bio-text">
+                        I'm a forward-thinking developer creating immersive digital experiences
+                        that blend cutting-edge technology with stunning design. My work exists
+                        at the intersection of innovation and aesthetics.
+                    </p>
+                </div>
+                   <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/abdoahmed/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100065484038724" target="_blank" class="social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://github.com/AbdoAhmedAbdelmonem" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://codeforces.com/profile/roshen" target="_blank" class="social-icon" aria-label="Codeforces">
+                            <i class="fas fa-code"></i>
+                        </a>
+                        <a href="mailto:tokyo9900777@gmail.com" class="social-icon" aria-label="Gmail">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.instagram.com/levi_ackerman_763/" target="_blank" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="future-card">
+                <h1 class="future-heading">ABOUT ME</h1>
+                <div class="about-content">
+                    <div class="profile-img-container">
+                        <div class="profile-img-border"></div>
+                        <img src="Images/DeWatermark.ai_1748512990329.jpg" alt="Profile" class="profile-img">
+                    </div>
+                    <p class="bio-text">
+                        I'm Abdo Ahmed, a full stack developer from Alexandria with a passion for coding and
+                        problem-solving. I completed the Alextream bootcamp for competitive programming, and
+                        I love tackling algorithmic challenges just as much as I enjoy building sleek, interactive
+                        websites. Right now, I'm working on <b>Chameleon</b>, an educational platform for the Faculty
+                        of Computer and Data Science at Alexandria University. I've been shifting from classic JavaScript
+                        to ReactJS to take my projects to the next level.
+                        Beyond coding, I enjoy riddles and anything that challenges my logic.
+                        I won't lie—I struggle with possessiveness in friendships, but no matter what,
+                        I keep pushing forward, improving my skills, and working on what I love.
+                    </p>
+
+                    <div class="cv-download-container">
+                        <a href="Images/CV/Abdo%20Ahmed's%20Resume.pdf" download="AbdoAhmed_CV.pdf" class="creative-cv-btn">
+                            <span class="btn-icon-cv"><i class="fas fa-file-arrow-down"></i></span>
+                            <span class="btn-text-cv">Download CV</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="future-card">
+                <h1 class="future-heading">TECHNOLOGIES</h1>
+                <div class="skills-section">
+                    <h2 class="skills-title">LANGUAGES & FRAMEWORKS</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-html5 skill-icon" style="color: #e34f26;"></i>
+                            <span class="skill-name">HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt skill-icon" style="color: #029cfc;"></i>
+                            <span class="skill-name">CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js skill-icon" style="color: #f7df1e;"></i>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-r skill-icon" style="color: #61dafb;"></i>
+                            <span class="skill-name">R</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python skill-icon" style="color: #3776ab;"></i>
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java skill-icon" style="color: #007396;"></i>
+                            <span class="skill-name">Java</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-section" style="margin-top: 3rem;">
+                    <h2 class="skills-title">TOOLS & PLATFORMS</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt skill-icon" style="color: #f05032;"></i>
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws skill-icon" style="color: #ff9900;"></i>
+                            <span class="skill-name">AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database skill-icon" style="color: #00f0ff;"></i>
+                            <span class="skill-name">SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-section" style="margin-top: 3rem;">
+                    <h2 class="skills-title">DESIGN AND PRODUCTIVITY</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="https://1000logos.net/wp-content/uploads/2020/03/Canva-icon.png" alt="Canva Logo" width="75">
+                            <span class="skill-name">CANVA</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn-icons-png.flaticon.com/512/888/888883.png" alt="word Logo" width="50">
+                            <span class="skill-name">WORD</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg/2203px-Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg.png" alt="powerpoint Logo" width="50">
+                            <span class="skill-name">POWERPOINT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="future-card">
+                <h1 class="future-heading">MY PROJECTS</h1>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="Images/Screenshot%202025-03-31%20225949.png" alt="Project 1" class="project-image">
+                        <h3 class="project-title">Chameleon FCDS</h3>
+                        <p class="project-description">
+                            Chameleon is a comprehensive educational site that aims to provide students
+                            and faculty with a wealth of resources to enhance learning and research. My platform
+                            is dedicated to fostering a collaborative
+                            and engaging environment for all computer science and data science enthusiasts.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JAVASCRIPT</span>
+                            <span class="tag">MOBILE RESPONSIVE</span>
+                            <span class="tag">GOOGLE DRIVE/YOUTUBE APIS</span>
+                            <span class="tag">GOOGLE CLOUD ENVIRONMENT</span>
+                            <span class="tag">Three.js</span>
+                            <span class="tag">AI</span>
+                        </div>
+                        <div class="btn-group">
+                            <a href="https://chameleon-nu.vercel.app/" class="btn btn-primary">View Project</a>
+                            <a href="https://github.com/AbdoAhmedAbdelmonem/Chameleon" class="btn btn-secondary">View Repository</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="Images/Screenshot%202025-03-31%20225752.png" alt="Project 2" class="project-image">
+                        <h3 class="project-title">HackerRank FCDS</h3>
+                        <p class="project-description">
+                            HackerRank is a premier coding platform that helps developers and students enhance their programming
+                            skills through challenges, competitions, and interview preparation
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">MOBILE RESPONSIVE</span>
+                            <span class="tag">JAVASCRIPT</span>
+                            <span class="tag">GOOGLE DRIVE APIS</span>
+                            <span class="tag">GOOGLE CLOUD ENVIRONMENT</span>
+                            <span class="tag">Three.js</span>
+                        </div>
+                        <div class="btn-group">
+                            <a href="https://hr-fcds-materials.vercel.app/#" class="btn btn-primary">View Project</a>
+                            <a href="https://github.com/AbdoAhmedAbdelmonem/Hacker-Rank-FCDS" class="btn btn-secondary">View Repository</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="Images/Screenshot%202025-03-31%20231118.png" alt="Project 3" class="project-image">
+                        <h3 class="project-title">E-COMMERCE SYSTEM</h3>
+                        <p class="project-description">
+                            Next-generation E-commerce platform that projects 3D holograms of
+                            participants in real-time virtual spaces.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">NOT MOBILE RESPONSIVE</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JAVASCRIPT</span>
+                            <span class="tag">PYTHON</span>
+                            <span class="tag">FLASK</span>
+                            <span class="tag">DATABASE</span>
+                        </div>
+                        <div class="btn-group">
+                            <a href="https://ecommerce-full-stack-project.vercel.app/" class="btn btn-primary">View Project</a>
+                            <a href="https://github.com/AbdoAhmedAbdelmonem/Ecommerce-FullStackProject" class="btn btn-secondary">View Repository</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="Images/img.png" alt="Project 1" class="project-image">
+                        <h3 class="project-title">AWS File Sharing System</h3>
+                        <p class="project-description">
+                            Upload your files to Amazon S3 with our lightweight web application.
+                            Perfect for team collaboration and personal storage.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JAVASCRIPT</span>
+                            <span class="tag">MOBILE RESPONSIVE</span>
+                            <span class="tag">AWS S3</span>
+                            <span class="tag">AWS EC2</span>
+                        </div>
+                        <div class="btn-group">
+                            <a href="https://aws-s3-sand.vercel.app/" class="btn btn-primary">View Project</a>
+                            <a href="https://github.com/AbdoAhmedAbdelmonem/AWS-S3" class="btn btn-secondary">View Repository</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="Images/img_1.png" alt="Project 1" class="project-image">
+                        <h3 class="project-title">AURA Multiple Linear Regression Analysis</h3>
+                        <p class="project-description">
+                            A full stack developed project with an awesome productive team aimed
+                            to regression analysis for multiple linear regression with statistics
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JAVASCRIPT</span>
+                            <span class="tag">MOBILE RESPONSIVE</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask Framework</span>
+                        </div>
+                        <div class="btn-group">
+                            <a href="https://aura-mlr.netlify.app/" class="btn btn-primary">View Project</a>
+                            <a href="https://github.com/AbdoAhmedAbdelmonem/AURA-MLR" class="btn btn-secondary">View Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="future-card">
+                <h1 class="future-heading">LET'S BUILD THE FUTURE</h1>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" id="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" id="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Your Vision</label>
+                        <textarea id="message" class="form-textarea" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">SEND MESSAGE</button>
+                </form>
+            </div>
+        </section>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
