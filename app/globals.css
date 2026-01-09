@@ -41,7 +41,7 @@
     /* VISCERA Design Variables */
     --bg: #000000;
     --fg: #ffffff;
-    --accent: #ff3e00;
+    --accent: #ffffff;
     --gray: #222222;
     --syne: "Syne", sans-serif;
     --inter: "Inter", sans-serif;
@@ -1941,4 +1941,5 @@ footer {
         font-size: 0.7rem;
         letter-spacing: 0.05em;
     }
+
 }
