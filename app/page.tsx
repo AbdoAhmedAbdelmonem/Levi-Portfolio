@@ -202,7 +202,7 @@ export default function Home() {
             <span className="hero-type outline-text parallax-text" data-speed="2">
               DEVELOPER
             </span>
-            <a href="/Images/CV/Abdo Ahmed's Resume.pdf" download className="download-cv-btn">
+            <a href="/Images/CV/Abdelrahman_Ahmed_Resume.pdf" download className="download-cv-btn">
               Get My CV
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
@@ -851,3 +851,4 @@ export default function Home() {
     </>
   )
 }
+
